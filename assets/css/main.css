@@ -4408,3 +4408,58 @@ body {
 	color: #AAAAAA;
   }
   
+  /* ===== AgSafari Palette Overrides ===== */
+
+/* Buttons */
+.button.primary {
+	background-color: #B4C951 !important; /* Green */
+	border-color: #2A5F5D !important;     /* Blue border */
+	color: #2A5F5D !important;            /* Blue text */
+  }
+  
+  .button.primary:hover {
+	background-color: #2A5F5D !important; /* Blue hover */
+	border-color: #B4C951 !important;
+	color: #FFFFFF !important;
+  }
+  
+  /* Links */
+  a {
+	color: #2A5F5D; /* Blue links */
+  }
+  a:hover {
+	color: #B4C951; /* Green hover */
+  }
+  
+  /* Icons in Footer */
+  #footer .icons .icon.alt {
+	border: 2px solid #B4C951 !important; 
+	color: #FFFFFF !important;
+  }
+  
+  #footer .icons .icon.alt:hover {
+	background-color: #B4C951 !important;
+	color: #2A5F5D !important;
+  }
+  
+  /* Section Wrappers */
+  .wrapper.style1 {
+	background-color: #2A5F5D !important; /* Blue sections */
+	color: #FFFFFF !important;
+  }
+  
+  .wrapper.style2 {
+	background-color: #B4C951 !important; /* Green sections */
+	color: #2A5F5D !important;
+  }
+  
+  .wrapper.style3 {
+	background-color: #FFFFFF !important; /* White sections */
+	color: #2A5F5D !important;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+	color: #2A5F5D !important;
+  }
+  
