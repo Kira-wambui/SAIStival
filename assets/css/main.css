@@ -4463,3 +4463,66 @@ body {
 	color: #2A5F5D !important;
   }
   
+  /* ===== Refined AgSafari Palette ===== */
+
+/* Base backgrounds */
+body, .wrapper {
+	background-color: #2A5F5D !important;
+	color: #FFFFFF !important;
+  }
+  
+  /* Buttons */
+  .button.primary {
+	background-color: #9AAE46 !important; /* Muted green */
+	border: none !important;
+	color: #FFFFFF !important;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .button.primary:hover {
+	background-color: #B4C951 !important; /* Brighter green hover */
+	color: #2A5F5D !important;
+  }
+  
+  /* Sections */
+  .wrapper.style1 {
+	background: #2A5F5D !important; /* Deep green */
+	color: #FFFFFF !important;
+  }
+  
+  .wrapper.style2 {
+	background: #233C3B !important; /* Even darker variation for contrast */
+	color: #FFFFFF !important;
+  }
+  
+  .wrapper.style3 {
+	background: #1B2E2D !important; /* Dark glossy base */
+	color: #B4C951 !important;       /* Muted green text accents */
+  }
+  
+  /* Links */
+  a {
+	color: #B4C951; /* Accent green */
+  }
+  a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+  }
+  
+  /* Footer */
+  #footer {
+	background: #1B2E2D !important;
+	color: #FFFFFF !important;
+  }
+  
+  #footer .icons .icon.alt {
+	border: 2px solid #9AAE46 !important;
+	color: #FFFFFF !important;
+  }
+  
+  #footer .icons .icon.alt:hover {
+	background-color: #B4C951 !important;
+	color: #2A5F5D !important;
+  }
+  
