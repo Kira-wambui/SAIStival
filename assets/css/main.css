@@ -4525,47 +4525,4 @@ body, .wrapper {
 	background-color: #B4C951 !important;
 	color: #2A5F5D !important;
   }
-/* FAQ Section */
-.faq-section {
-	background-color: #f9f9f9; /* soft light background */
-	padding: 50px 20px;
-	text-align: center;
-  }
   
-  .faq-section h2 {
-	color: #2A5F5D; /* AG Safari Blue for the heading */
-	font-size: 2rem;
-	margin-bottom: 20px;
-	border-bottom: 3px solid #B4C951; /* AG Safari Green underline */
-	display: inline-block;
-	padding-bottom: 5px;
-  }
-  
-  .faq-item {
-	max-width: 700px;
-	margin: 20px auto;
-	background: #ffffff; /* clean white box */
-	border-left: 6px solid #2A5F5D; /* AG Safari Blue accent */
-	border-radius: 8px;
-	padding: 20px;
-	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-	text-align: left;
-	transition: transform 0.2s ease;
-  }
-  
-  .faq-item:hover {
-	transform: translateY(-3px);
-  }
-  
-  .faq-item h3 {
-	font-size: 1.2rem;
-	color: #2A5F5D; /* consistent AG Safari Blue */
-	margin-bottom: 10px;
-  }
-  
-  .faq-item p {
-	font-size: 1rem;
-	color: #333; /* easy-to-read dark grey */
-	line-height: 1.5;
-  }
-	
