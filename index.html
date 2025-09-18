@@ -164,23 +164,41 @@
   </footer>
   
   <style>
-	/* Footer icon sizing fix */
+	/* Footer background */
+	#footer {
+	  background: #2A5F5D; /* AgSafari Blue */
+	  color: #FFFFFF;
+	  padding: 2rem 0;
+	}
+  
+	/* Footer icons */
 	#footer .icons li a {
 	  width: 40px;
 	  height: 40px;
 	  line-height: 40px;
-	  font-size: 18px;  /* smaller icon size */
+	  font-size: 18px;
 	  border-radius: 50%;
-	  border: 2px solid #B4C951; /* AgSafari green */
+	  border: 2px solid #B4C951; /* AgSafari Green */
+	  color: #FFFFFF; /* White icons by default */
 	  display: inline-flex;
 	  align-items: center;
 	  justify-content: center;
-	  transition: background 0.3s, color 0.3s;
+	  margin: 0 0.5rem;
+	  transition: background 0.3s, color 0.3s, border-color 0.3s;
 	}
   
 	#footer .icons li a:hover {
-	  background: #B4C951;
-	  color: #2A5F5D; /* AgSafari blue */
+	  background: #B4C951; /* AgSafari Green on hover */
+	  color: #2A5F5D;      /* AgSafari Blue inside */
+	  border-color: #FFFFFF;
+	}
+  
+	/* Footer copyright */
+	#footer .copyright {
+	  margin-top: 1rem;
+	  font-size: 0.9rem;
+	  color: #FFFFFF;
+	  text-align: center;
 	}
   </style>
   
