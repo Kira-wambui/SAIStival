@@ -4246,3 +4246,165 @@ input, select, textarea {
 	margin: 0 1em;
   }
   
+  /* Footer Fix */
+#footer .icons {
+	display: flex;
+	justify-content: center;
+	gap: 1.2rem; /* even spacing */
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+  }
+  
+  #footer .icons li {
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .icons a {
+	font-size: 1.5rem;
+	color: var(--agri-green);
+	transition: color 0.3s ease;
+  }
+  #footer .icons a:hover {
+	color: var(--neon-blue);
+  }
+  /* ===============================
+   GLOBAL STYLES
+=================================*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	background: linear-gradient(135deg, #2A5F5D 0%, #000000 100%);
+	background-attachment: fixed;
+  }
+  
+  /* Container */
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4 {
+	color: #B4C951;
+	margin-bottom: 15px;
+	font-weight: 700;
+  }
+  
+  /* Paragraphs */
+  p {
+	color: #FFFFFF;
+	line-height: 1.7;
+  }
+  
+  /* ===============================
+	 HERO SECTION
+  =================================*/
+  .hero {
+	text-align: center;
+	padding: 100px 20px;
+	background: linear-gradient(135deg, #2A5F5D 40%, #000000 100%);
+  }
+  
+  .hero h1 {
+	font-size: 3rem;
+	color: #FFFFFF;
+  }
+  
+  .hero p {
+	font-size: 1.2rem;
+	color: #B4C951;
+	margin: 20px 0;
+  }
+  
+  .hero .btn {
+	background: #B4C951;
+	color: #000;
+	padding: 14px 32px;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+	background: #2A5F5D;
+	color: #FFFFFF;
+	box-shadow: 0 0 12px #00FFFF;
+  }
+  
+  /* ===============================
+	 SECTIONS
+  =================================*/
+  .section {
+	padding: 60px 20px;
+	text-align: center;
+  }
+  
+  .section.dark {
+	background: #2A5F5D;
+  }
+  
+  .section.light {
+	background: #000000;
+  }
+  
+  /* Expect List */
+  .expect-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .expect-list li {
+	margin: 10px 0;
+	color: #FFFFFF;
+	font-size: 1.1rem;
+	position: relative;
+	padding-left: 20px;
+  }
+  
+  .expect-list li::before {
+	content: "✔";
+	color: #B4C951;
+	position: absolute;
+	left: 0;
+  }
+  
+  /* ===============================
+	 FOOTER
+  =================================*/
+  footer {
+	background: #000000;
+	text-align: center;
+	padding: 30px 20px;
+  }
+  
+  .footer-icons {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin-bottom: 15px;
+  }
+  
+  .footer-icons i {
+	font-size: 1.6rem;
+	color: #FFFFFF;
+	transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .footer-icons i:hover {
+	color: #B4C951;
+	transform: scale(1.1);
+  }
+  
+  footer p {
+	font-size: 0.9rem;
+	color: #AAAAAA;
+  }
+  
