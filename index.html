@@ -162,28 +162,55 @@
     <div class="faq-item">
       <button class="faq-question">Who is SAIStival for?</button>
       <div class="faq-answer">
-        SAIStival is designed for the current SAIS cohort of founders, with invitations extended to select active alumni and ecosystem partners.
+        SAIStival is designed for the current SAIS cohort of founders, with invitations also extended to a select group of active alumni. A limited number of ecosystem partners and funders will also be present.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">Can alumni or additional team members attend?</button>
       <div class="faq-answer">
-        Yes. Active alumni and additional team members can join for $400, covering the full program and discounted ATS tickets. SAIS covers travel and accommodation for one representative per startup.
+        Yes. Active alumni and additional team members can join for a contribution of $400, which covers participation in the full 2.5-day program and access to discounted ATS tickets. Please note that SAIS only covers travel and accommodation for one representative per startup.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">What makes SAIStival different from a regular conference?</button>
       <div class="faq-answer">
-        It blends conference focus with festival energy: field visits, interactive workshops, shared experiences, structured, authentic, and engaging.
+        SAIStival blends the focus of a conference with the energy of a festival. Instead of sitting in hotel ballrooms, you’ll take part in field visits, interactive workshops, and shared experiences in unique settings. The agenda is structured, authentic, and engaging, with every activity focused on building real connections and practical outcomes.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What kinds of sessions will take place?</button>
+      <div class="faq-answer">
+        The program includes:
+        <ul>
+          <li>Peer learning sessions shaped by founder input</li>
+          <li>Expert-led workshops on key topics like fundraising, talent, and growth</li>
+          <li>Curated networking opportunities with investors</li>
+          <li>Immersive community experiences that foster collaboration and trust</li>
+        </ul>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">Will SAIS provide travel and accommodation?</button>
       <div class="faq-answer">
-        Yes. SAIS covers flights and hotels for one representative per startup in the current cohort.
+        Yes. SAIS will cover flights and accommodation for one representative per startup in the current cohort. Hotels will be booked for the full week (from Saturday to Friday) for all non-Nairobi-based founders.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I register?</button>
+      <div class="faq-answer">
+        Eligible participants will receive an official invitation with registration details.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Who will be speaking at SAIStival?</button>
+      <div class="faq-answer">
+        Speakers will include leading founders, funders, and ecosystem builders from across Africa and beyond. The lineup will be announced closer to the event.
       </div>
     </div>
   </div>
@@ -219,6 +246,10 @@
       margin-bottom: 10px;
       color: #333;
     }
+
+    .faq-answer ul {
+      margin: 5px 0 0 15px;
+    }
   </style>
 
   <script>
@@ -227,7 +258,6 @@
     faqButtons.forEach(button => {
       button.addEventListener('click', () => {
         const answer = button.nextElementSibling;
-        // Slide toggle effect
         if(answer.style.display === 'block'){
           answer.style.display = 'none';
         } else {
