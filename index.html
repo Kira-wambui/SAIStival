@@ -1,305 +1,217 @@
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAIStival 2026 - Africa’s Premier Agricultural Innovation Conference & Festival</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    /* Color Palette */
-    :root {
-      --ag-blue: #2A5F5D;
-      --ag-green: #B4C951;
-      --ag-white: #FFFFFF;
-      --faq-bg: #f9f9f9;
-    }
+<html>
+	<head>
+		<title>SAIStival 2026</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Banner Gradient Text */
+			.banner-gradient {
+    background: linear-gradient(90deg, #FF6B6B, #FFD93D, #6BCB77);
+    background-clip: text;           /* standard property */
+    -webkit-background-clip: text;   /* WebKit prefix */
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* WebKit */
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      color: var(--ag-blue);
-      background: var(--ag-white);
-    }
+			/* FAQ styles */
+			.faq-item {
+				text-align: left;
+				margin: 10px 0;
+			}
+			.faq-item h3 {
+				cursor: pointer;
+				color: #000000;
+				font-weight: 600;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 5px;
+			}
+			.faq-item h3:hover {
+				color: #2A5F5D;
+			}
+			.faq-item p {
+				display: none;
+				margin: 0 0 10px 20px;
+				color: #000;
+				text-align: left; 
+			}
+			hr {
+				border: 0;
+				border-top: 1px solid #ccc;
+			}
+			.toggle-icon {
+				font-weight: bold;
+				font-size: 18px;
+				color: #2A5F5D;
+			}
+		</style>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
 
-    h2, h3 {
-      color: var(--ag-blue);
-    }
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">SAIStival</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#expect">What to Expect</a></li>
+						<li><a href="#agenda">Agenda</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="#sponsors">Sponsors</a></li>
+					</ul>
+				</nav>
+			</header>
 
-    /* Banner */
-    #banner {
-      background: var(--ag-green);
-      color: var(--ag-white);
-      padding: 120px 0;
-      text-align: center;
-    }
-    #banner img {
-      max-width: 100%;
-      margin-top: 20px;
-    }
+			<!-- Banner -->
+			<section id="banner">
+				<div class="content">
+					<header>
+						<h2 class="banner-gradient">SAIStival 2026</h2>
+						<p class="banner-gradient">Africa’s Premier Agri-Innovation Festival<br>
+						7–10 February 2026 • Nairobi, Kenya</p>
+					</header>
+					<span class="image"><img src="images/pic01.jpg" alt="SAIStival" /></span>
+				</div>
+				<a href="#about" class="goto-next scrolly">Next</a>
+			</section>
 
-    /* Sections */
-    section {
-      padding: 80px 20px;
-    }
+			<!-- About -->
+			<section id="about" class="spotlight style1 bottom">
+				<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<header>
+							<h2>About SAIStival</h2>
+							<p>SAIStival brings together Africa’s leading Agritech founders, investors, and ecosystem builders in a setting designed for collaboration and growth.</p>
+						</header>
+						<p>Over 2.5 days, participants will step out of the usual conference format and into a curated experience that blends learning, connection, and action. The program weaves together immersive field visits, expert-led workshops, and interactive community activities that spark new ideas and unlock practical solutions. More than just networking, SAIStival is about building trust, sharing knowledge, and creating the partnerships needed to scale Africa’s most promising Agritech ventures.</p>
+					</div>
+				</div>
+				<a href="#expect" class="goto-next scrolly">Next</a>
+			</section>
 
-    /* FAQ Accordion */
-    .faq-item {
-      background: var(--faq-bg);
-      border-radius: 8px;
-      margin-bottom: 10px;
-      border-left: 4px solid var(--ag-green);
-      padding: 15px 20px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .faq-item:hover {
-      background: #e8f0e5;
-    }
-    .faq-answer {
-      display: none;
-      margin-top: 10px;
-      color: #333;
-    }
+			<!-- What to Expect -->
+			<section id="expect" class="spotlight style2 right">
+				<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>What to Expect</h2>
+					</header>
+					<ul>
+						<li>Peer learning sessions shaped by founder-driven topics</li>
+						<li>Expert-led workshops on fundraising, talent, and growth</li>
+						<li>Curated networking opportunities with investors</li>
+						<li>Immersive shared experiences to build trust and collaboration</li>
+					</ul>
+				</div>
+				<a href="#agenda" class="goto-next scrolly">Next</a>
+			</section>
 
-    /* Footer */
-    #footer {
-      background: var(--ag-blue);
-      color: var(--ag-white);
-      text-align: center;
-      padding: 40px 20px;
-    }
-    #footer .icons li {
-      display: inline-block;
-      margin: 0 8px;
-    }
-    #footer .icons li a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--ag-white);
-      color: var(--ag-blue);
-      font-size: 18px;
-      transition: all 0.3s;
-    }
-    #footer .icons li a:hover {
-      background: var(--ag-green);
-      color: var(--ag-white);
-    }
-  </style>
-</head>
-<body>
+			<!-- Agenda -->
+			<section id="agenda" class="spotlight style3 left">
+				<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>Agenda Highlights</h2>
+						<p>Agenda coming soon</p>
+					</header>
+					<p>Stay tuned for an exciting lineup of immersive field visits, expert-led workshops, and networking sessions designed to accelerate growth and collaboration in Africa’s Agritech space.</p>
+				</div>
+				<a href="#sponsors" class="goto-next scrolly">Next</a>
+			</section>
 
-  <!-- Header -->
-  <header id="header">
-    <h1 id="logo"><a href="#">SAIStival 2026</a></h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#register" class="button primary">Register</a></li>
-      </ul>
-    </nav>
-  </header>
+			<!-- Sponsors -->
+			<section id="sponsors" class="wrapper style1 special fade-up">
+				<div class="container">
+					<header class="major">
+						<h2>Sponsors & Partners</h2>
+						<p>In collaboration with Tech Safari, SAIS, and Briter.</p>
+					</header>
+				</div>
+			</section>
 
-  <!-- Banner -->
-  <section id="banner">
-    <h2>SAIStival 2026</h2>
-    <p>Africa’s premier agricultural innovation conference & festival.<br>February 7–10, 2026 • Nairobi, Kenya</p>
-    <img src="images/hero.jpg" alt="SAIStival Banner">
-  </section>
+			<!-- FAQ -->
+			<section id="faq" class="wrapper style2 special fade">
+				<div class="container">
+					<header>
+						<h2>FAQ's</h2>
+					</header>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About SAIStival</h2>
-    <p>SAIStival brings together Africa’s leading Agritech founders, investors, and ecosystem builders in a setting designed for collaboration and growth.</p>
-    <p>Over 2.5 days, participants step out of the usual conference format into a curated experience blending learning, connection, and action. Expect immersive field visits, expert-led workshops, and interactive activities that spark new ideas and unlock practical solutions.</p>
-    <p>More than networking, SAIStival builds trust, shares knowledge, and creates partnerships to scale Africa’s most promising Agritech ventures.</p>
-  </section>
+					<div class="faq-item">
+						<h3><span class="toggle-icon">+</span> Who is SAIStival for?</h3>
+						<p>SAIStival is designed for the current SAIS cohort of founders, with invitations also extended to a select group of active alumni. A limited number of ecosystem partners and funders will also be present.</p>
+						<hr>
+					</div>
 
-  <!-- Agenda -->
-  <section id="agenda">
-    <h2>What to Expect</h2>
-    <ul>
-      <li>Peer learning sessions shaped by founder-driven topics</li>
-      <li>Expert-led workshops on fundraising, talent, and growth</li>
-      <li>Curated networking with investors</li>
-      <li>Immersive experiences to build trust and collaboration</li>
-    </ul>
-    <p><em>Full agenda coming soon.</em></p>
-  </section>
+					<div class="faq-item">
+						<h3><span class="toggle-icon">+</span> Can alumni or additional team members attend?</h3>
+						<p>Yes. Active alumni and additional team members can join for a contribution of $400, which covers participation in the full 2.5-day program and access to discounted ATS tickets.</p>
+						<hr>
+					</div>
 
-  <!-- Speakers -->
-  <section id="speakers">
-    <h2>Speakers</h2>
-    <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
-      <img src="images/speaker-logo1.png" alt="Speaker 1" style="max-width:120px;">
-      <img src="images/speaker-logo2.png" alt="Speaker 2" style="max-width:120px;">
-      <img src="images/speaker-logo3.png" alt="Speaker 3" style="max-width:120px;">
-      <img src="images/speaker-logo4.png" alt="Speaker 4" style="max-width:120px;">
-    </div>
-  </section>
+					<div class="faq-item">
+						<h3><span class="toggle-icon">+</span> What makes SAIStival different?</h3>
+						<p>SAIStival blends the focus of a conference with the energy of a festival. Instead of hotel ballrooms, you’ll take part in field visits, interactive workshops, and shared experiences in unique settings.</p>
+						<hr>
+					</div>
 
-  <!-- Sponsors -->
-  <section id="sponsors">
-    <h2>Sponsors & Partners</h2>
-    <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
-      <img src="images/sponsor1.png" alt="Sponsor 1" style="max-width:150px;">
-      <img src="images/sponsor2.png" alt="Sponsor 2" style="max-width:150px;">
-      <img src="images/sponsor3.png" alt="Sponsor 3" style="max-width:150px;">
-    </div>
-  </section>
+					<div class="faq-item">
+						<h3><span class="toggle-icon">+</span> Will SAIS provide travel and accommodation?</h3>
+						<p>Yes. SAIS will cover flights and accommodation for one representative per startup in the current cohort. Hotels will be booked for the full week for all non-Nairobi-based founders.</p>
+						<hr>
+					</div>
+				</div>
+			</section>
 
-  <!-- FAQ Section -->
-<section id="faq">
-  <h2 style="text-align:center; color:#2A5F5D;">Frequently Asked Questions</h2>
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; SAIStival 2026. All rights reserved.</li>
+					<li>Design by Nancy Njuguna</li>
+				</ul>
+			</footer>
 
-  <div class="faq-container">
-    <div class="faq-item">
-      <button class="faq-question">Who is SAIStival for?</button>
-      <div class="faq-answer">
-        SAIStival is designed for the current SAIS cohort of founders, with invitations also extended to a select group of active alumni. A limited number of ecosystem partners and funders will also be present.
-      </div>
-    </div>
+		</div>
 
-    <div class="faq-item">
-      <button class="faq-question">Can alumni or additional team members attend?</button>
-      <div class="faq-answer">
-        Yes. Active alumni and additional team members can join for a contribution of $400, which covers participation in the full 2.5-day program and access to discounted ATS tickets. Please note that SAIS only covers travel and accommodation for one representative per startup.
-      </div>
-    </div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-    <div class="faq-item">
-      <button class="faq-question">What makes SAIStival different from a regular conference?</button>
-      <div class="faq-answer">
-        SAIStival blends the focus of a conference with the energy of a festival. Instead of sitting in hotel ballrooms, you’ll take part in field visits, interactive workshops, and shared experiences in unique settings. The agenda is designed to be structured, authentic, and engaging, with every activity focused on building real connections and practical outcomes.
-      </div>
-    </div>
+		<script>
+			// FAQ toggle
+			document.querySelectorAll('.faq-item h3').forEach(question => {
+				question.addEventListener('click', () => {
+					const answer = question.nextElementSibling;
+					const icon = question.querySelector('.toggle-icon');
+					if(answer.style.display === "block") {
+						answer.style.display = "none";
+						icon.textContent = "+";
+					} else {
+						answer.style.display = "block";
+						icon.textContent = "−";
+					}
+				});
+			});
+		</script>
 
-    <div class="faq-item">
-      <button class="faq-question">What kinds of sessions will take place?</button>
-      <div class="faq-answer">
-        The program includes:
-        <ul>
-          <li>Peer learning sessions shaped by founder input</li>
-          <li>Expert-led workshops on key topics like fundraising, talent, and growth</li>
-          <li>Curated networking opportunities with investors</li>
-          <li>Immersive community experiences that foster collaboration and trust</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Will SAIS provide travel and accommodation?</button>
-      <div class="faq-answer">
-        Yes. SAIS will cover flights and accommodation for one representative per startup in the current cohort. Hotels will be booked for the full week (From Saturday to Friday) for all non-Nairobi-based founders.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">How do I register?</button>
-      <div class="faq-answer">
-        Eligible participants will receive an official invitation with registration details.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Who will be speaking at SAIStival?</button>
-      <div class="faq-answer">
-        Speakers will include leading founders, funders, and ecosystem builders from across Africa and beyond. The lineup will be announced closer to the event.
-      </div>
-    </div>
-  </div>
-
-  <style>
-    /* FAQ Styles - Clean Inline Version */
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .faq-question {
-      width: 100%;
-      text-align: left;
-      background: none; /* No bubble */
-      color: #B4C951; /* AG Safari Green */
-      font-size: 1.1rem;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      padding: 10px 0;
-      transition: color 0.3s;
-    }
-
-    .faq-question:hover {
-      color: #2A5F5D; /* AG Safari Blue on hover */
-    }
-
-    .faq-answer {
-      display: none;
-      padding-left: 15px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .faq-answer ul {
-      margin: 5px 0 0 15px;
-    }
-  </style>
-
-  <script>
-    // FAQ Toggle
-    const faqButtons = document.querySelectorAll('.faq-question');
-    faqButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-        if(answer.style.display === 'block'){
-          answer.style.display = 'none';
-        } else {
-          answer.style.display = 'block';
-        }
-      });
-    });
-  </script>
-</section>
-
-
-  <!-- Registration -->
-  <section id="register">
-    <h2>Join SAIStival 2026</h2>
-    <p>Be part of Africa’s premier agricultural innovation gathering.</p>
-    <form method="post" action="https://eventbrite.com/your-link" style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-      <input type="email" name="email" placeholder="Your Email Address" style="padding:10px; flex:1; min-width:250px;">
-      <input type="submit" value="Register" style="padding:10px 20px; background:var(--ag-green); border:none; color:white; cursor:pointer;">
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <ul class="icons">
-      <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-      <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-      <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-      <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-    </ul>
-    <p>&copy; 2026 SAIStival. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // FAQ toggle
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const answer = item.querySelector('.faq-answer');
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
-
-</body>
+	</body>
 </html>
