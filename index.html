@@ -23,7 +23,7 @@
 			}
 			.faq-item h3 {
 				cursor: pointer;
-				color: #000000;
+				color: #dddddd;
 				font-weight: 600;
 				display: flex;
 				align-items: center;
@@ -31,12 +31,12 @@
 				margin-bottom: 5px;
 			}
 			.faq-item h3:hover {
-				color: #2A5F5D;
+				color: #ffffff;
 			}
 			.faq-item p {
 				display: none;
 				margin: 0 0 10px 20px;
-				color: #000;
+				color: #fff;
 				text-align: left; 
 			}
 			hr {
@@ -48,6 +48,22 @@
 				font-size: 18px;
 				color: #2A5F5D;
 			}
+
+			/* Sponsors Styles */
+			.logos {
+				display: flex; 
+				justify-content: space-between; 
+				align-items: center; 
+				width: 100%; 
+			}
+
+			.logos img {
+				max-width: 30%; 
+				height: auto; 
+				display: block; 
+			}
+
+
 		</style>
 	</head>
 	<body class="is-preload landing">
@@ -55,7 +71,11 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html">SAIStival</a></h1>
+				<h1 id="logo">
+					<a href="index.html">
+						<img src="images/pic01.jpg" style="max-width: 12.5%;" />
+					</a>
+				</h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="#about">About</a></li>
@@ -70,15 +90,13 @@
 			<!-- Banner -->
 			<section id="banner">
 				<div class="content">
-					<header>
-						<h2 class="banner-gradient">SAIStival 2026</h2>
-						<p class="banner-gradient">Africa’s Premier Agri-Innovation Festival<br>
-						7–10 February 2026 • Nairobi, Kenya</p>
-					</header>
-					<span class="image"><img src="images/pic01.jpg" alt="SAIStival" /></span>
+					<img style="max-width: 32%;" src="./images/pic01.jpg" />
+					<h2 class="banner-gradient"> Africa’s Premier Agri-Innovation Festival </h2>
+					<h4> 7–10 February 2026 • Nairobi, Kenya </h4>
 				</div>
 				<a href="#about" class="goto-next scrolly">Next</a>
 			</section>
+
 
 			<!-- About -->
 			<section id="about" class="spotlight style1 bottom">
@@ -128,10 +146,14 @@
 			<!-- Sponsors -->
 			<section id="sponsors" class="wrapper style1 special fade-up">
 				<div class="container">
-					<header class="major">
-						<h2>Sponsors & Partners</h2>
+						<p style="font-weight: bold;font-size:x-large;">Our Sponsors & Partners</p>
+						<div class="logos">
+							<!-- Tech Safari logo -->
+							<img src="https://framerusercontent.com/images/7QgqQ3nZHTG67qkxq6yhhRvl2A.png?width=200&height=200" alt="tech-safari-logo" />
+							<img src="./images/pic01.jpg" alt="sais-logo" />
+							<img src="./assets/css/images/SAIS Partners/Briter.png" alt="briter-logo" />
+						</div>
 						<p>In collaboration with Tech Safari, SAIS, and Briter.</p>
-					</header>
 				</div>
 			</section>
 
