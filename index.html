@@ -154,34 +154,91 @@
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
+  <!-- FAQ Section -->
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
 
-    <div class="faq-item">Who is SAIStival for?
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">Who is SAIStival for?</button>
       <div class="faq-answer">
         SAIStival is designed for the current SAIS cohort of founders, with invitations extended to select active alumni and ecosystem partners.
       </div>
     </div>
 
-    <div class="faq-item">Can alumni or additional team members attend?
+    <div class="faq-item">
+      <button class="faq-question">Can alumni or additional team members attend?</button>
       <div class="faq-answer">
         Yes. Active alumni and additional team members can join for $400, which covers the full program and discounted ATS tickets. SAIS covers travel and accommodation for one representative per startup.
       </div>
     </div>
 
-    <div class="faq-item">What makes SAIStival different from a regular conference?
+    <div class="faq-item">
+      <button class="faq-question">What makes SAIStival different from a regular conference?</button>
       <div class="faq-answer">
         It blends conference focus with festival energy: field visits, interactive workshops, shared experiences, structured, authentic, and engaging.
       </div>
     </div>
 
-    <div class="faq-item">Will SAIS provide travel and accommodation?
+    <div class="faq-item">
+      <button class="faq-question">Will SAIS provide travel and accommodation?</button>
       <div class="faq-answer">
         Yes. SAIS covers flights and hotels for one representative per startup in the current cohort.
       </div>
     </div>
-  </section>
+  </div>
+
+  <style>
+    /* FAQ Styles */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: #B4C951; /* AG Safari Green */
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: background 0.3s;
+    }
+
+    .faq-question:hover {
+      background: #2A5F5D; /* AG Safari Blue */
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+  </style>
+
+  <script>
+    // FAQ Toggle Functionality
+    const faqButtons = document.querySelectorAll('.faq-question');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</section>
+
 
   <!-- Registration -->
   <section id="register">
