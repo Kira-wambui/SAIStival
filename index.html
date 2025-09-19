@@ -156,7 +156,7 @@
 
   <!-- FAQ Section -->
 <section id="faq">
-  <h2>Frequently Asked Questions</h2>
+  <h2 style="text-align:center; color:#2A5F5D;">Frequently Asked Questions</h2>
 
   <div class="faq-container">
     <div class="faq-item">
@@ -169,7 +169,7 @@
     <div class="faq-item">
       <button class="faq-question">Can alumni or additional team members attend?</button>
       <div class="faq-answer">
-        Yes. Active alumni and additional team members can join for $400, which covers the full program and discounted ATS tickets. SAIS covers travel and accommodation for one representative per startup.
+        Yes. Active alumni and additional team members can join for $400, covering the full program and discounted ATS tickets. SAIS covers travel and accommodation for one representative per startup.
       </div>
     </div>
 
@@ -189,51 +189,50 @@
   </div>
 
   <style>
-    /* FAQ Styles */
+    /* FAQ Styles - Clean Inline Version */
     .faq-container {
       max-width: 800px;
       margin: 0 auto;
-    }
-
-    .faq-item {
-      margin-bottom: 15px;
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid #ccc;
+      font-family: Arial, sans-serif;
     }
 
     .faq-question {
       width: 100%;
       text-align: left;
-      background: #B4C951; /* AG Safari Green */
-      color: #fff;
-      padding: 15px 20px;
+      background: none; /* No bubble */
+      color: #B4C951; /* AG Safari Green */
       font-size: 1.1rem;
+      font-weight: 600;
       border: none;
       cursor: pointer;
-      outline: none;
-      transition: background 0.3s;
+      padding: 10px 0;
+      transition: color 0.3s;
     }
 
     .faq-question:hover {
-      background: #2A5F5D; /* AG Safari Blue */
+      color: #2A5F5D; /* AG Safari Blue on hover */
     }
 
     .faq-answer {
       display: none;
-      padding: 15px 20px;
-      background: #f9f9f9;
+      padding-left: 15px;
+      margin-bottom: 10px;
       color: #333;
     }
   </style>
 
   <script>
-    // FAQ Toggle Functionality
+    // FAQ Toggle
     const faqButtons = document.querySelectorAll('.faq-question');
     faqButtons.forEach(button => {
       button.addEventListener('click', () => {
         const answer = button.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        // Slide toggle effect
+        if(answer.style.display === 'block'){
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
       });
     });
   </script>
